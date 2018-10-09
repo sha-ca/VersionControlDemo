@@ -26,14 +26,17 @@
    <scripts>
       <row>
          <process><![CDATA[! EVENT "mytime"
-! Version 1.2b
+! Version 1.3
 
-:SET &NOW# = SYS_TIMESTAMP_PHYSICAL("TZ.SYD")
-
-:print "Version 1.2b"
+:print "Version 1.3"
 :print ""
-:print "Es ist gerade &NOW#"
-]]></process>
+
+:SET &now# = SYS_TIME_PHYSICAL("HH:MM","TZ.MEZ")
+:print "Es ist gerade &now# Uhr."
+
+!:SET &std# = SYS_TIME_PHYSICAL("HH","TZ.MEZ")
+!:SET &min# = SYS_TIME_PHYSICAL("MM","TZ.MEZ")
+!:print "Es ist &std# Uhr und &min# Minuten."]]></process>
       </row>
    </scripts>
    <event_attributes>
