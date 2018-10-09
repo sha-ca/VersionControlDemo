@@ -10,7 +10,8 @@
          <minimum_ae_version>11.2</minimum_ae_version>
          <auto_deactivation>A</auto_deactivation>
          <child_flags>00000000000000000000000000000000</child_flags>
-         <ert>29</ert>
+         <ert>32</ert>
+         <ert_trend>2</ert_trend>
          <last_runtimes>HQAAAA0AAAAbAAAAEQAAADoAAACiAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
@@ -20,23 +21,23 @@
          <queue>CLIENT_QUEUE</queue>
          <sub_type>TT</sub_type>
          <description>Event myTime</description>
-         <versioning_id>2067097402</versioning_id>
+         <versioning_id>2067097401</versioning_id>
       </row>
    </general_attributes>
    <scripts>
       <row>
          <process><![CDATA[! EVENT "mytime"
-! Version 1.5
+! Version 1.6
 
-:print "Version 1.5"
+:print "Version 1.6"
 :print ""
 
-:SET &now# = SYS_TIME_PHYSICAL("HH:MM","TZ.MEZ")
-:print "Es ist gerade &now# Uhr."
+!:SET &now# = SYS_TIME_PHYSICAL("HH:MM","TZ.MEZ")
+!:print "Es ist gerade &now# Uhr."
 
-!:SET &std# = SYS_TIME_PHYSICAL("HH","TZ.MEZ")
-!:SET &min# = SYS_TIME_PHYSICAL("MM","TZ.MEZ")
-!:print "Es ist &std# Uhr und &min# Minuten."]]></process>
+:SET &std# = SYS_TIME_PHYSICAL("HH","TZ.MEZ")
+:SET &min# = SYS_TIME_PHYSICAL("MM","TZ.MEZ")
+:print "Es ist &std# Uhr und &min# Minuten."]]></process>
       </row>
    </scripts>
    <event_attributes>
