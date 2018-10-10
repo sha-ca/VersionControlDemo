@@ -36,7 +36,7 @@ while [ $x -le 15 ]
 do
   echo "."
   x=$(( $x + 1 ))
-  sleep 2
+  sleep 1
 done
 
 echo "Sleeping ended."
