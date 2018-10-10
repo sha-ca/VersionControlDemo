@@ -26,7 +26,7 @@
    <scripts>
       <row>
          <process><![CDATA[! EVENT "mytime"
-! Version 1.8
+! Version 1.8a
 
 :print "Version 1.8"
 :print ""
