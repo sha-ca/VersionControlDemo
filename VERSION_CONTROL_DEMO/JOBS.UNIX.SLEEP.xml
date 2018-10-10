@@ -13,7 +13,7 @@
          <ert>59</ert>
          <ert_trend>8</ert_trend>
          <platform>UNIX</platform>
-         <last_runtimes>HgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
+         <last_runtimes>HgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAB4AAAAeAAAAHgAAAA==</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
          <name>JOBS.UNIX.SLEEP</name>
@@ -36,7 +36,7 @@ while [ $x -le 15 ]
 do
   echo "."
   x=$(( $x + 1 ))
-  sleep 2
+  sleep 1
 done
 
 echo "Sleeping ended."
